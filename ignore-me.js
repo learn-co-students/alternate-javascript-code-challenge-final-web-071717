@@ -5,6 +5,7 @@ function dogeProtec() {
     debugger
     protecfulDoge.classList.remove("protec")
     void protecfulDoge.offsetWidth
+    
   }
   protecfulDoge.classList.add("protec")
   return "DOGE PROTEC!"
