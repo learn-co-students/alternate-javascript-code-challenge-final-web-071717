@@ -1,0 +1,89 @@
+body {
+  font-family: "palatino";
+  background-image: url("./assets/subtle-doge.png");
+  background-repeat: repeat;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+html {
+  height: 100%;
+}
+
+html div h1 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#result-display-container {
+  top: 0%;
+  height: 200px;
+  text-shadow: 5px 5px 5px #888;
+}
+
+#result-text {
+  position: relative;
+  font-size: 75pt;
+}
+
+#user-input-wrapper {
+  top: 30%;
+}
+
+#bork-wrapper {
+  height: 400px;
+}
+
+#input-identifier-row {
+  text-align: center;
+}
+
+.identifier {
+  margin: 5px 0;
+  width: 125px;
+  display: inline-block;
+}
+
+#input-row {
+  text-align: center;
+}
+
+#calculation-submitter {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -94.5px;
+  box-shadow: 5px 5px 5px #888;
+  width: 189px;
+  height: 200px;
+  background: url('./assets/doge_neutral.png');
+  transition: transform 17s;
+}
+
+#calculation-submitter:hover {
+  background: url('./assets/doge_action.png');
+  transform: scale(2)
+}
+
+#doge-protector {
+  pointer-events: none;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.protec {
+  animation: appear-fade-out 10s;
+}
+
+@keyframes appear-fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}

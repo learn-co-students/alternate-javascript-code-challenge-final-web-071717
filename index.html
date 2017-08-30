@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flatiron Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+  </head>
+
+  <body>
+    <img id="doge-protector" src="./assets/doge-divide.png">
+    <div id="result-display-container">
+      <h1 id="result-text">0</h1>
+    </div>
+
+    <div id="user-input-wrapper">
+      <form onsubmit="return false">
+        <div id="input-identifier-row">
+          <h3 class="identifier">Value</h3>
+          <h3 class="identifier">Operand</h3>
+          <h3 class="identifier">Value</h3>
+        </div>
+        <div id="input-row">
+          <input id="opA" type="number" value="">
+          <input id="operand" list="operators">
+          <datalist id="operators">
+            <option value="+">
+            <option value="-">
+            <option value="*">
+            <option value="/">
+            <option value="%">
+          </datalist>
+          <input id="opB" type="number" value="">
+        </div>
+
+        <div id="bork-wrapper">
+          <img id="calculation-submitter" onmouseover="bork()" onmouseleave="stahp()" onclick="myCalculator.calculate(document.getElementById('opA').value, document.getElementById('opB').value, document.getElementById('operand').value)" type="submit"/>
+        </div>
+      </form>
+    </div>
+
+
+    </div>
+
+    <script language="css" src="./style.css"></script>
+    <script language="JavaScript" src="./solution/operations.js"></script>
+    <script language="JavaScript" src="./solution/vanillaSolution.js"></script>
+    <script language="JavaScript" src="./solution/refactoredSolution.js"></script>
+    <script language="JavaScript" src=".boring-stuff.js"></script>
+
+    <audio id="borker"><source src="./assets/bork.mp3"></source></audio>
+    <script language="JavaScript">
+      function bork() {document.getElementById("borker").play()}
+      function stahp() {document.getElementById("borker").pause()}
+    </script>
+  </body>
+</html>
