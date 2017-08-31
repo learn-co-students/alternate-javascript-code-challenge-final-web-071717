@@ -3,7 +3,7 @@ function add(opA, opB) {
 }
 
 function subtract(opA, opB) {
-  return opB === 0 ? null : (opA - opB)
+  return (opA - opB)
 }
 
 function multiply(opA, opB) {
