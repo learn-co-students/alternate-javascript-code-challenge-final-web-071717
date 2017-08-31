@@ -4,6 +4,7 @@
 
 - DOM Manipulation
 - Events and Event Handlers
+- Callback function handling
 - Constructors and Prototypes or ES6 Classes (For part two)
 
 ## Instructions
@@ -14,13 +15,13 @@ We're building out simple two operand calculator. A user will provide two values
 
 - Implement the functionality to perform a calculation given two valid operators (as integers) and an operand
 - Be able to perform multiple operations
-- Manage callbacks
-- Display the result
+- Display the result in the DOM
+- Manage bad user input
 
 ### Functionality demo
 
 TODO
-![Functionality Demo](functionality-demo.gif)
+![Functionality Demo](example_video.gif =250x250)
 
 ### Part One - Create a solution without utilizing Object Orientation(no classes) ****NO jQuery****.
 

@@ -63,7 +63,7 @@ html div h1 {
   width: 189px;
   height: 200px;
   background: url('./assets/doge_neutral.png');
-  transition: transform 17s;
+  transition: transform 200s;
 }
 
 #calculation-submitter:hover {

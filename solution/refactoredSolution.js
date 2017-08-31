@@ -3,7 +3,7 @@ class Calculator {
   constructor() {
     this.previousResults = []
     this.resultDiv = document.getElementById("result-text")
-    this.resultDiv.innerHTML = "ples"
+    this.resultDiv.innerHTML = ""
     this.operationDispatch = {
       "+": add,
       "-": subtract,
