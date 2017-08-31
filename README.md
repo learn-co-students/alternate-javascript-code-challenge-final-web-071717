@@ -20,7 +20,7 @@ We're building out simple two operand calculator. A user will provide two values
 
 ### Functionality demo
 
-![Functionality Demo](example_video.gif)
+![Functionality Demo](./assets/example_video.gif)
 
 ### Part One - Create a solution without utilizing Object Orientation(no classes) ****NO jQuery****.
 
