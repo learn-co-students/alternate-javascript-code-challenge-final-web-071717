@@ -1,4 +1,5 @@
 # Alternate JavaScript Code Challenge Final
+  Read all instructions before beginning
 
 ## Objectives
 
@@ -20,19 +21,18 @@ We're building out simple two operand calculator. A user will provide two values
 
 ### Functionality demo
 
-![Functionality Demo](./assets/example_video.gif)
+![Functionality Demo](./assets/example_functionality.gif)
 
 ### Part One - Create a solution without utilizing Object Orientation(no classes) ****NO jQuery****.
 
 1. **Create a working solution in `solution/vanillaSolution.js`**
   **DO NOT SKIP PART ONE AND LEAVE THE SOLUTION FOR PART ONE IN ITS OWN FILE**
-  - The input field for the first operand has been provided to you
 
-2. When a users clicks the 'Calculate' button, the result should display in a separate div on the screen
+2. When a users clicks the 'Calculate' img (represented as a big 'ol DOGE here!), the result should display in a separate div on the screen (this div has already been created and is in index.html. Identify it.)
   - Pressing 'Calculate' when a result is already displaying should replace the current displayed result with the new result
 
-3. If a user provides invalid input (not integers for the operators) we should not perform the calculation and an error message should be displayed
-  - Hint: while we can, (and you should feel free to), write logic in our JS to handle this, is there a simple change we could make to our HTML to manage this?
+3. If a user provides invalid input (non-numbers for the operators, division by zero) we should not perform the calculation. A function called `dogeProtec` has been provided and loaded into the global scope via index.html. This function should be invoked if a user performs a calculation that does not return a rational number.
+  - Hint: while we can, (and you should feel free to), write logic entirely our JS to handle this, is there a simple change we could make to our HTML tags to only accept certain kinds of input?
 
 ### Part Two - Refactoring with Constructors and Prototypes (feel free to use either ES5 or ES6)
 
@@ -40,7 +40,7 @@ We're building out simple two operand calculator. A user will provide two values
 
 1. **Create your refactored OO Solution in a new file.(`solution/refactoredSolution.js`)**
 
-2. All code pertaining to the calculation itself should be placed in `solution/operation.js` (The file is imported already in index.html. You will have access to all functions defined within from your other .js files)
+2. All code pertaining to the calculations themselves should be placed in `solution/operation.js` (The file is imported already in index.html. You will have access to all functions defined within from your other .js files)
 
 3. While `vanillaSolution.js` and `refactoredSolution.js` were already imported in our index.html file, we have not yet imported our `operations.js` script! Please make the necessary alteration (either in `index.html` or in `refactoredSolution.js`) so that `refactoredSolution.js` has access to the functions defined within
 
@@ -50,3 +50,11 @@ We're building out simple two operand calculator. A user will provide two values
 
 6. Our refactored solution should have a function that calculates the sum of all previously calculated values
   - DOM should have a button that, when clicked, should display this sum
+
+### Important Notes
+
+1. Do not make more work for yourself than necessary! Styling should not need to be altered and all changes in our index.html file will revolve around affixing callbacks to them.
+2. Take a moment to identify (in the index.html file) which DOM elements you are going to:
+  - Alter when a calculation is completed
+  - Capture user input from
+  - Fire a callback from when a user clicks
