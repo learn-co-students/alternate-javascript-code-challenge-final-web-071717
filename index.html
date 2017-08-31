@@ -22,31 +22,25 @@
           <h3 class="identifier">Value</h3>
         </div>
         <div id="input-row">
-          <input id="opA" type="number" value="">
+          <input id="opA" type="text" value="">
           <input id="operand" list="operators">
           <datalist id="operators">
             <option value="+">
-            <option value="-">
-            <option value="*">
-            <option value="/">
-            <option value="%">
           </datalist>
-          <input id="opB" type="number" value="">
+          <input id="opB" type="text" value="">
         </div>
 
         <div id="bork-wrapper">
-          <img id="calculation-submitter" onmouseover="audio.play()" onmouseleave="audio.pause()" onclick="myCalculator.calculate(document.getElementById('opA').value, document.getElementById('opB').value, document.getElementById('operand').value)" type="submit"/>
+          <img id="calculation-submitter" onmouseover="audio.play()" onmouseleave="audio.pause()" type="submit"/>
         </div>
 
       </form>
     </div>
 
     <script language="css" src="./style.css"></script>
-    <script language="JavaScript" src="./solution/operations.js"></script>
     <script language="JavaScript" src="./solution/vanillaSolution.js"></script>
     <!-- <script language="JavaScript" src="./solution/refactoredSolution.js"></script> -->
     <script language="JavaScript" src="./doge-protector.js"></script>
-
     <audio id="borker"><source src="./assets/bork.mp3"></source></audio>
     <script language="JavaScript">
       let audio = document.getElementById("borker")
