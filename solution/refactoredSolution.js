@@ -1,13 +1,15 @@
 class Calculator {
 
   constructor() {
+    this.previousResults = []
     this.resultDiv = document.getElementById("result-text")
     this.operationDispatch = {
       "+": add,
       "-": subtract,
       "*": multiply,
       "/": divide,
-      "%": modulo
+      "%": modulo,
+      "SUM ALL": sum
     }
   }
 
@@ -17,9 +19,9 @@ class Calculator {
 
   calculate(opA, opB, operand) {
     const result = this.operationDispatch[operand](parseFloat(opA), parseFloat(opB))
+    this.previousResults.push(result)
     this.displayResult(result)
   }
-
 }
 
 var myCalculator = new Calculator()

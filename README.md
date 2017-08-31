@@ -31,7 +31,9 @@ We're building out simple two operand calculator. A user will provide two values
 2. When a users clicks the 'Calculate' img (represented as a big 'ol DOGE here!), the result should display in a separate div on the screen (this div has already been created and is in index.html. Identify it.)
   - Pressing 'Calculate' when a result is already displaying should replace the current displayed result with the new result
 
-3. If a user provides invalid input (non-numbers for the operators, division by zero) we should not perform the calculation. A function called `dogeProtec` has been provided and loaded into the global scope via index.html. This function should be invoked if a user performs a calculation that does not return a rational number.
+3. Operations for [+, -, /, \*, %] should all be provided and a user should be able to select/write in any of those into the operator field before submitting
+
+4. If a user provides invalid input (non-numbers for the operators, division by zero) we should not perform the calculation. A function called `dogeProtec` has been provided and loaded into the global scope via index.html. This function should be invoked if a user performs a calculation that does not return a rational number.
   - Hint: while we can, (and you should feel free to), write logic entirely our JS to handle this, is there a simple change we could make to our HTML tags to only accept certain kinds of input?
 
 ### Part Two - Refactoring with Constructors and Prototypes (feel free to use either ES5 or ES6)
@@ -44,12 +46,11 @@ We're building out simple two operand calculator. A user will provide two values
 
 3. While `vanillaSolution.js` and `refactoredSolution.js` were already imported in our index.html file, we have not yet imported our `operations.js` script! Please make the necessary alteration (either in `index.html` or in `refactoredSolution.js`) so that `refactoredSolution.js` has access to the functions defined within
 
-4. Our refactored solution (using either a prototype or ES6 class) should own the callback for when a user hits submit and update the DOM accordingly
+4. Our refactored solution (using either a prototype or ES6 class) should own the callback for when the user clicks our submit doge img button and update the DOM accordingly
 
-5. Our refactored solution should keep track of previously calculated values
+5. Our refactored solution should keep track of previously calculated values somehow. We don't need to display, but our class does need to have the functionality to hold them.
 
-6. Our refactored solution should have a function that calculates the sum of all previously calculated values
-  - DOM should have a button that, when clicked, should display this sum
+6. Our refactored solution should have a function that returns the sum of all previously calculated values
 
 ### Important Notes
 
