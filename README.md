@@ -33,9 +33,9 @@ We're building out a simple two operand calculator. A user will provide two valu
 
 4. If a user provides invalid input (non-numbers for the operands, division by zero, improper types) we should not perform any calculation. We will handle bad input with the function `dogeProtec`. This function has already been made -- you only need to invoke it.
 
-5. Our refactored solution should keep track of previously calculated values.
+5. Our OOSolution should keep track of previously calculated values.
 
-6. Our refactored solution should have a function that calculates the sum of all previously calculated values.
+6. Our OOSolution should have a function that calculates the sum of all previously calculated values.
 
 ### Important Notes
 
